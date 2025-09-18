@@ -7,11 +7,15 @@ import { useTranslation } from "react-i18next";
 
 export default function App() {
   const { i18n } = useTranslation();
+  const handleChangeLang = (lang: string) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
+  };
   return (
     <div>
       <select
           value={i18n.language}
-          onChange={(e) => i18n.changeLanguage(e.target.value)}
+          onChange={(e) => handleChangeLang(e.target.value)}
         >
           <option value="fr">FR</option>
           <option value="en">EN</option>
