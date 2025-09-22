@@ -1,0 +1,5 @@
+[
+  {"id":"p1","name":"Desk Lamp","category":"Home","price":29.9,"stock":12},
+  {"id":"p2","name":"Wireless Mouse","category":"Tech","price":19.5,"stock":0},
+  {"id":"p3","name":"Notebook A5","category":"Stationery","price":5.2,"stock":37}
+]
